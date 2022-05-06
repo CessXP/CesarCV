@@ -437,6 +437,14 @@ img{
 
 }
 
+/* =============== Certificados =================*/
+.certificate__title{
+    font-size:  var(--h3-font-size);
+    margin-bottom: var(--mb-1);
+    
+}
+
+
 /* ============ SOFTWARE e Idiomas============*/
 .skills__content,
 .languages__content{
