@@ -472,6 +472,11 @@ img{
     margin-right: .75rem;
 }
 
+.languages__name a{
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
 /* Interests*/
 
 .interests__container{
