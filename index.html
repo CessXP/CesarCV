@@ -1,369 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--BOX ICONS-->
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-
-    <!--CSS-->
-    <link rel="stylesheet" href="assets/css/styles.css">
-
-    <title>Cesar CV</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>César Mejía Cruz – Network & Cybersecurity Engineer</title>
+<style>
+:root {
+  --bg: #ffffff;
+  --text: #1f2937;          /* slate-800 */
+  --card: #ffffff;
+  --meta: #6b7280;          /* gray-500 */
+  --accent: #1e40af;        /* navy */
+  --accent-quiet: #e0e7ff;  /* indigo-100 */
+  --rule: #e5e7eb;          /* gray-200 */
+  --shadow: 0 6px 24px rgba(0,0,0,.06);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0f14;
+    --text: #e5e9f0;
+    --card: #0f141b;
+    --meta: #9aa4b2;
+    --accent: #60a5fa;       /* soft blue */
+    --accent-quiet: #0b1b33; /* subtle tinted bg */
+    --rule: #2a3441;
+    --shadow: 0 10px 30px rgba(0,0,0,.45);
+  }
+}
+/* Base */
+body { background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, sans-serif; margin:0; }
+.container { max-width:900px; margin:24px auto; background: var(--card); padding:24px; border-radius:14px; box-shadow: var(--shadow); border: 1px solid var(--rule); }
+h1 { margin:0; font-size:2rem; color: var(--accent); }
+h2 { font-size:1.1rem; margin-top:1.6em; letter-spacing:.04em; text-transform: none; color: var(--accent); }
+h2 + hr, .rule { border: none; border-top: 2px solid var(--rule); margin:.5em 0 1em; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+ul { margin:0; padding-left:22px; }
+.meta { color: var(--meta); font-size:.95rem; }
+.section { margin-top:1em; }
+/* Header block */
+.header { display:flex; align-items:center; gap:18px; flex-wrap:wrap; }
+.header img { width:120px; height:120px; border-radius:50%; object-fit:cover; outline: 3px solid var(--accent-quiet); }
+/* Lists markers */
+li::marker { color: var(--meta); }
+strong { color: var(--text); }
+</style>
 </head>
 <body>
-    <!--HEADER-->
-    <header class="l-header" id="header">
-          <nav class="nav bd-container">
-              <a href="#" class="nav__logo">César Mejía Cruz</a>
+<div class="container">
 
-              <div class="nav__menu" id="nav-menu"> 
-                  <ul class="nav__list">
-                      <li class="nav__item">
-                          <a href="#" class="nav__link active-link">
-                            <i class='bx bx-home nav__icon'></i>Inicio
-                          </a>
-                      </li>
+<div class="header">
+  <img src="foto_cv.png" alt="Profile Photo" style="width:120px;height:120px;border-radius:50%;object-fit:cover;">
+  <div>
+    <h1>César Mejía Cruz</h1>
+    <div class="meta">Network & Cybersecurity Engineer</div>
+  </div>
+</div>
 
-                      <li class="nav__item">
-                        <a href="#social" class="nav__link">
-                            <i class='bx bx-envelope' ></i></i>Redes
-                        </a>
-                    </li>
+<p>Computer Engineer with over 3 years of hands-on experience in enterprise networking, cybersecurity, and technical support, specializing in FortiGate, advanced routing protocols (BGP, VPN, VPLS), and incident management with platforms such as Zendesk. Proven track record in supporting AAA corporate clients and leading critical incident response, reducing MTTR by 30%. Successfully managed the migration and modernization of network infrastructure across 150+ sites and implemented perimeter security improvements at one of Mexico’s top telecommunications companies. Adept at incident validation, device hardening, and network architecture design, with a passion for operational excellence and continuous learning.</p>
+<div class="section"><strong>Contact:</strong><br>
+📞 +52 5611118045 | ✉️ cesar94xp@outlook.com | 🌐 linkedin.com/in/cesar-mc99 | 📍 Coacalco de Berriozábal, State of Mexico, Mexico</div>
 
-                      <li class="nav__item">
-                        <a href="#profile" class="nav__link">
-                            <i class='bx bx-user'></i>Sobre mí
-                        </a>
-                    </li>
+<h2>Education</h2>
+<ul>
+<li>Bachelor’s in Computer Engineering, Instituto Politécnico Nacional (Aug 2012 – Jun 2022)</li>
+<li><strong>Certifications:</strong><ul>
+<li>Fortinet FortiGate 7.4 Administrator</li><li>Fortinet Certified Associate & Fundamentals</li><li>EF SET English Certificate C1 Advanced</li><li>JavaScript: Advanced Web Knowledge</li><li>Programming Logic</li><li>Git and GitHub</li><li>Microsoft Office Suite</li>
+</ul></li>
+</ul>
 
-                    <li class="nav__item">
-                        <a href="#education" class="nav__link">
-                            <i class='bx bx-book'></i>Educación
-                        </a>
-                    </li>
+<h2>Professional Experience</h2>
+<ul>
+<li><strong>SR L1 Network Core & Backbone Operations</strong>, Talento MCM Business Tech-Co (Jun 2024 – Present)<ul><li>Lead technical operations and support for AAA clients, ensuring 24/7 SLA compliance and swift incident resolution.</li><li>Configure, troubleshoot, and maintain backbone/core network infrastructure, focusing on FortiGate, BGP, VPLS, and VPN.</li><li>Validate and coordinate incident response at the national network level to ensure business continuity.</li><li>Manage hardware refresh projects, including large-scale device replacements and migrations.</li></ul></li><li><strong>SR ENGINEER NETWORK OPERATION CENTER L2</strong>, MCM Telecom (Jul 2023 – Jun 2024)<ul><li>Coordinated support for critical network events, acting as escalation point for advanced technical incidents.</li><li>Optimized team workflows, resulting in faster resolution times and improved service quality.</li><li>Performed complex configuration changes for advanced network services and client requirements.</li></ul></li><li><strong>JR ENGINEER NETWORK OPERATION CENTER L2</strong>, MCM Telecom (Jun 2023 – Jul 2023)<ul><li>Managed escalated tickets for enterprise data connectivity through Zendesk, diagnosing both physical and logical faults.</li><li>Delivered high-quality support for enterprise clients, enhancing customer satisfaction.</li></ul></li><li><strong>ENGINEER NETWORK OPERATION CENTER L2</strong>, MCM Telecom (Sep 2022 – May 2023)<ul><li>Provided tier 2 technical support for corporate clients via ticketing platforms, primarily Zendesk.</li><li>Monitored, maintained, and diagnosed complex networking and security incidents.</li><li>Administered VPN access and implemented network security policies.</li></ul></li><li><strong>Intern – Net Prov Voice</strong>, MCM Telecom (Jul 2022 – Sep 2022)<ul><li>Provisioned voice and SMS services for enterprise clients.</li><li>Supported deployment and operation of telecommunication services.</li></ul></li>
+</ul>
 
-                    <li class="nav__item">
-                        <a href="#experiencia" class="nav__link">
-                            <i class='bx bx-book'></i>Experiencia
-                        </a>
-                    </li>
+<h2>Languages</h2>
+<ul><li>Spanish: Native</li><li>English: Advanced (C1, EF SET Certified)</li></ul>
 
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                            <i class='bx bx-receipt'></i>Habilidades
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#software" class="nav__link">
-                            <i class='bx bx-laptop'></i>Software
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#certificates" class="nav__link">
-                            <i class='bx bx-award'></i>Certificados
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#languages" class="nav__link">
-                            <i class='bx bx-world'></i>Idiomas
-                        </a>
-                    </li>
-                   
-                  </ul>
-              </div>
-              <div class="nav__toggle" id="nav-toggle"> 
-                <i class='bx bxs-grid'></i>
-              </div>
-          </nav>
-    </header>
-    <main class="l-main bd-container">
-        <!--All elements within this div, are generated in pdf-->
-        <div class="resume" id="area-cv">   
-            <div class="resume__left">
-                <!--HOME-->
-                <section class="home" id="home">
-                    <div class="home__container section bd-grid">
-                        <div class="home__data bd-grid">
-                            <img src="assets/img/perfil.jpg" alt="" class="home__img">
-
-                            <h1 class="home__tittle">César <b>Mejía</b><b> Cruz</b></h1>
-                            <h3 class="home__profession">Desarrollador Web</h3>
-
-                            <!-- Botón para descaargar el pdf almacenado en la carpeta pdf del proyecto-->
-                            <div>
-                                <a download="" href="assets/pdf/Cesar_MC_CV.pdf" class="home__button-movil">Descargar</a>
-                            </div>
-
-                        </div>
-
-                        <div class="home__address bd-grid">
-                            <span class="home__information">
-                                <i class='bx bx-map home__icon'></i>Coacalco | Edo. de México | México 
-                            </span>
-                            <span class="home__information">
-                                <i class='bx bx-envelope home__icon '></i>cesar94xp@outlook.com
-                            </span>
-                            <span class="home__information">
-                                <i class='bx bx-phone home__icon'></i>5611118045
-                            </span>
-                        </div>
-                    </div>
-
-                    <!--Download button-->
-                    <i class='bx bx-download generate-pdf' title="Generar PDF" id="resume-button" ></i>
-
-                </section>
-
-
-
-                <!----------------------SOCIAL------------------------>
-                <section class="social section" id="social">
-                    <h2 class="section-title">Redes</h2>
-
-                    <div class="social__container bd-grid">
-                        <a href="https://www.linkedin.com/in/cesar-mc99/" target="_blank" class="social__link">
-                            <i class='bx bxl-linkedin-square social__icon'></i> www.linkedin.com/in/cesar-mc99
-                        </a>
-                        <a href="https://github.com/CessXP" target="_blank" class="social__link">
-                            <i class='bx bxl-github social__icon'></i> https://github.com/CessXP
-                        </a>
-                        
-                    </div>
-                </section>
-
-                <!-----------------------Sobre mi---------------------->
-                <section class="profile section" id="profile">
-                    <h2 class="section-title">Sobre Mí</h2>
-
-                    <p class="profile_description">Recien egresado de la carrera de ingeniería en computación con ganas de contribuir al éxito de proyectos diversos a través de trabajo duro y perseverancia, poniendo énfasis al detalle y una excelente organización, siempre motivado para aprender, crecer y sobresalir ante los retos, apuntando a convertirse en un sobresaliente Full Stack Developer.</p>
-                </section>
-            </div>
-                <div class="resume__right">
-                <!--Educación-->
-                <section class="section education section" id="education">
-                    <h2 class="section-title">Educación</h2>
-
-                    <div class="education__container bd-grid">
-                        <div class="education__content">
-                            <div class="education__time">
-                                <span class="education__rounder"></span>
-                            </div>
-                            <div class="education__data bd-grid">
-                                <h3 class="education__title">Ingeniería en Computación</h3>
-                                <span class="education__studies">INSTITUTO POLITÉCNICO NACIONAL</span>
-                                <span class="education__year">2015 - 2022 (Junio)</span>
-                            </div>
-                        </div>
-
-                    </div>
-                 </section>
-                
-                  <!------------Habilidades-------->
-                 <section class="skills section" id="skills">
-                    <h2 class="section-title">Habilidades</h2>
-
-                    <div class="skills__content bd-grid">
-                        <ul class="skills__data">
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> Responsable
-                            </li>
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> Proactivo
-                            </li>
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> Perseverante 
-                            </li>
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> Pensamiento Crítico
-                            </li>
-                            
-                        </ul>
-
-                        <ul class="skills__data">
-                            
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> Autodidacta
-                            </li>
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> Paciente
-                            </li>
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> Orientado a resultados
-                            </li>
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> Trabajo en equipo
-                            </li>
-                        </ul>
-
-                        
-                    </div>
-                 </section>
-
-                 <!-------------Experiencia-------------->
-                <section class="section experiencia section" id="experiencia">
-                    <h2 class="section-title">Experiencia</h2>
-
-                    <div class="experiencia__container bd-grid">
-                        <div class="experencia__content">
-                            <div class="experencia__time">
-                                <span class="experencia__rounder"></span>
-                            </div>    
-                        <div class="experencia__data bd-grid">
-                            <h3 class="experencia__title">Ingeniero JR | Customer Technical Support Data</h3>
-                            <span class="experencia__company">MCM Telecom</span>
-                            <span class="experencia__year">Septiembre 2022 - Actual </span>
-                            <span class="experencia__descripcion">Equipo encargo de brindar soporte técnico post entrega a servicios de datos empresariales mediante un sistema de tickets donde se les brinda atención personalizada a cada uno de sus servicios de datos al igual de los requerimientos que soliciten, así como un constante monitoreo, detección y corrección de caídas de servicios, problemas en equipos físicos , cortes de fibra óptica y perdidas de servicio eléctrico en las localidades donde se le entregan los servicios.  </span>
-                        </div>
-
-                    </div>
-                        <div class="experencia__content">
-                            <div class="experencia__time">
-                                <span class="experencia__rounder"></span>
-                            </div>
-                            <div class="experencia__data bd-grid">
-                                <h3 class="experencia__title">Becarío | Network Provisioning Voice</h3>
-                                <span class="experencia__company">MCM Telecom</span>
-                                <span class="experencia__year">Junio 2022 - Septiembre 2022 </span>
-                                <span class="experencia__descripcion">Equipo encargado de aprovisionar mediante ordenes de trabajo servicios nuevos para clientes e incrementos de estos para servicios de voz y servicios de mensajería SMS, ambos empresariales, teniendo contacto directo con los clientes para la entrega de servicios con el objetivo de realizar pruebas en conjunto para validar la correcta funcionalidad.  </span>
-                            </div>
-                        </div>
-
-                        
-
-                    </div>
-                 </section>
-
-                <!------------Software-------->
-                <section class="skills section" id="software">
-                    <h2 class="section-title">Software</h2>
-
-                    <div class="skills__content bd-grid">
-                        <ul class="skills__data">
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> HTML
-                            </li>
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> CSS
-                            </li>
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> SQL
-                            </li>
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> LAMP/XAMPP
-                            </li>
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> Git
-                            </li>
-                            
-                        </ul>
-
-                        <ul class="skills__data">
-                            
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> MySQL/MariaDB
-                            </li>
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> Linux (Debian)
-                            </li>
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> PHP
-                            </li>
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> JavaScript
-                            </li>
-                        </ul>
-
-                        
-                    </div>
-                 </section>
-
-                 <!--Certificados-->
-                 <section class="certificate section" id="certificates">
-                    <h2 class="section-title">Certificados</h2>
-
-                    <div class="certificate__container bd-grid">
-
-                        <div class="certificate__content">
-                            <a href="https://app.aluracursos.com/degree/certificate/0ffd6030-f291-43c0-a501-93cee77278c6" target="_blank"><h3 class="certificate__title">Formación Principiante en Programación F2T2 - ONE</h3></a>
-                            <p class="certificate__description">Oracle - Alura Latam (2022)</p> 
-                        </div>
-                        
-                        <div class="certificate__content">
-                            <h3 class="certificate__title">Uso de paquetería Microsoft Office</h3>
-                            <P class="certificate__description">CCPM Ecatepec (2009 - 2011)</p>
-                        </div>
-
-                    </div>
-
-                 </section>
-                 
-                <!--Idiomas-->
-                <section class="languages section" id="languages">
-                    <h2 class="section-title">Idiomas</h2>
-
-                    <div class="languages__container">
-                        <ul class="languages__content bd-grid">
-                            <li class="languages__name">
-                                  <a href="https://cessxp.github.io/misdocumentos/CESAR%20MEJIA%20CRUZ.pdf" target="_blank" > <span class="languages__circle" style="text-decoration: none;"></span> Inglés </a> 
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-
-                <!--Intereses-->
-                <section class="interests section" id="interests">
-                    <h2 class="section-title">Intereses</h2>
-
-                    <div class="interests__container bd-grid">
-                        <div class="interests__content ">
-                            <i class='bx bx-headphone interests__icon'></i>
-                            <span class="interests__name">Escuchar Música</span>
-                        </div>
-
-                        <div class="interests__content ">
-                            <i class='bx bxs-plane-alt interests__icon'></i>
-                            <span class="interests__name">Viajar</span>
-                        </div>
-
-                        <div class="interests__content ">
-                            <i class='bx bx-movie-play interests__icon' ></i>
-                            <span class="interests__name">Ver Peliculas</span>
-                        </div>
-
-                        <div class="interests__content ">
-                            <i class='bx bx-dumbbell interests__icon' ></i>
-                            <span class="interests__name">Hacer Ejercicio</span>
-                        </div>
-
-                        <div class="interests__content ">
-                            <i class='bx bx-book-open interests__icon'></i>
-                            <span class="interests__name">Leer</span>
-                        </div>
-
-                    </div>
-                </section>
-
-            </div>
-        </div>
-
-    </main>
-    <!--Scroll Top-->
-    <a href="#" class="scrolltop" id="scroll-top">
-        <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
-    </a>
-
-    <!--HTML2PDF-->
-    <script src="assets/js/html2pdf.bundle.min.js" ></script>
-    <!--Main JS-->
-    <script src="assets/js/main.js"> </script>
-
-
+<h2>Skills</h2>
+<ul><li>Ticketing Platforms: Advanced use of Zendesk for incident management, escalation, and client communication</li><li>Network Security: FortiGate (hardening, log analysis, incident validation, VPN configuration), Secure Network Design, BGP, VPLS</li><li>Networking: BGP, VPLS, Routing & Switching (Cisco, Huawei, Extreme)</li><li>Incident Management: AAA client support, Backbone/core validation, 24/7 operational support</li><li>Scripting & Tools: Git, JavaScript, Office Suite</li></ul>
+</div>
 </body>
 </html>
