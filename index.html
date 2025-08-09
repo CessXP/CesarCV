@@ -172,6 +172,19 @@ strong { color: var(--text); }
     text-align: center;
   }
 }
+
+
+@media (prefers-color-scheme: dark) {
+  .download-banner .download-action,
+  .download-banner .download-link {
+    background: var(--accent);
+    color: #fff;
+  }
+  .download-banner .download-action:hover,
+  .download-banner .download-link:hover {
+    filter: brightness(1.15);
+  }
+}
 </style>
 </head>
 <body>
