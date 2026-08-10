@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="light dark" name="color-scheme"/>
 <title>César Mejía Cruz – Network &amp; Cybersecurity Engineer</title>
+
+<!-- Open Graph / Social Media Preview -->
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="César Mejía Cruz – Network &amp; Cybersecurity Engineer"/>
+<meta property="og:description" content="Network &amp; Security Engineer specialized in FortiGate (NSE 4 Certified), BGP, VPLS, and Multi-Cloud Integrations (AWS, GCP, Azure via IPsec VPN). 3+ years in Core &amp; Backbone Operations."/>
+<meta property="og:image" content="https://cessxp.github.io/CesarCV/assets/img/foto_cv.png"/>
+<meta property="og:url" content="https://cessxp.github.io/CesarCV"/>
+
 <style>
 :root {
   --bg: #ffffff;
@@ -29,6 +36,7 @@
     --shadow: 0 10px 30px rgba(0,0,0,.45);
   }
 }
+
 /* Base */
 body { background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, sans-serif; margin:0; }
 .container { max-width:900px; margin:24px auto; background: var(--card); padding:24px; border-radius:14px; box-shadow: var(--shadow); border: 1px solid var(--rule); }
@@ -38,11 +46,26 @@ h2 + hr, .rule { border: none; border-top: 2px solid var(--rule); margin:.5em 0 
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 ul { margin:0; padding-left:22px; }
+ul ul > li { margin-top: 12px; }
 .meta { color: var(--meta); font-size:.95rem; }
 .section { margin-top:1em; }
+
 /* Header block */
 .header { display:flex; align-items:center; gap:18px; flex-wrap:wrap; }
 .header img { width:120px; height:120px; border-radius:50%; object-fit:cover; outline: 3px solid var(--accent-quiet); }
+
+/* Badges Grid for Technical Skills */
+.skills-grid { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.badge {
+  background: var(--accent-quiet);
+  color: var(--accent);
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid var(--rule);
+}
+
 /* Lists markers */
 li::marker { color: var(--meta); }
 strong { color: var(--text); }
@@ -55,134 +78,87 @@ strong { color: var(--text); }
   bottom: 50px;
   background: var(--accent);
   color: #ffffff;
-  padding: 10px 12px;
+  padding: 8px 10px;
   border-radius: 999px;
   box-shadow: var(--shadow);
   display: flex;
-  gap: 10px;
+  gap: 8px;
   align-items: center;
   transition: transform .35s ease, opacity .35s ease;
   opacity: 0;
   z-index: 9999;
   border: 1px solid var(--rule);
+  width: auto;
+  max-width: min(560px, calc(100vw - 32px));
 }
 .download-banner.show {
   transform: translateX(-50%) translateY(0);
   opacity: 1;
 }
+.download-banner .download-text {
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
 .download-banner .download-action, .download-banner .download-link {
   background: #ffffff;
   color: var(--accent);
   border: none;
-  padding: 8px 12px;
+  padding: 6px 10px;
   border-radius: 999px;
   text-decoration: none;
   cursor: pointer;
   font-weight: 600;
+  font-size: 0.95rem;
 }
 .download-banner .download-action:hover, .download-banner .download-link:hover {
   filter: brightness(0.95);
   text-decoration: none;
 }
+
 @media (prefers-color-scheme: dark) {
   .download-banner {
     background: var(--card);
     color: var(--text);
   }
   .download-banner .download-action, .download-banner .download-link {
-    color: var(--text);
-  }
-}
-@media print {
-  .download-banner { display: none !important; }
-}
-
-
-/* --- Responsive tweaks for the download banner --- */
-.download-banner { 
-  width: min(680px, calc(100vw - 32px));
-  flex-wrap: wrap;
-}
-.download-banner .download-text {
-  white-space: nowrap;
-}
-@media (max-width: 640px) {
-  .download-banner {
-    bottom: 16px;
-    gap: 8px;
-    padding: 10px;
-  }
-  .download-banner .download-action, .download-banner .download-link {
-    flex: 1 1 auto;
-    text-align: center;
-    padding: 10px 12px;
-    font-size: 0.95rem;
-  }
-}
-@media (max-width: 420px) {
-  .download-banner {
-    width: calc(100vw - 24px);
-    border-radius: 16px;
-    left: 50%;
-    transform: translateX(-50%) translateY(110%);
-  }
-  .download-banner .download-text {
-    flex-basis: 100%;
-    text-align: center;
-  }
-  .download-banner .download-action, .download-banner .download-link {
-    flex-basis: 100%;
-  }
-}
-
-
-/* --- Size tweaks (smaller, closer to original) --- */
-.download-banner {
-  width: auto;
-  max-width: min(560px, calc(100vw - 32px));
-  padding: 8px 10px;
-  gap: 8px;
-  border-radius: 999px;
-}
-.download-banner .download-text {
-  font-size: 0.95rem;
-}
-.download-banner .download-action, .download-banner .download-link {
-  padding: 6px 10px;
-  font-size: 0.95rem;
-}
-@media (max-width: 640px) {
-  .download-banner { max-width: min(520px, calc(100vw - 24px)); padding: 8px; }
-  .download-banner .download-text { font-size: 0.9rem; }
-  .download-banner .download-action, .download-banner .download-link { font-size: 0.9rem; padding: 8px 10px; }
-}
-@media (max-width: 420px) {
-  .download-banner { width: calc(100vw - 20px); }
-}
-
-
-/* --- Mobile centering fix --- */
-@media (max-width: 640px) {
-  .download-banner {
-    justify-content: center;
-    text-align: center;
-  }
-  .download-banner .download-text {
-    flex-basis: 100%;
-    text-align: center;
-  }
-}
-
-
-@media (prefers-color-scheme: dark) {
-  .download-banner .download-action,
-  .download-banner .download-link {
     background: var(--accent);
     color: #fff;
   }
-  .download-banner .download-action:hover,
-  .download-banner .download-link:hover {
+  .download-banner .download-action:hover, .download-banner .download-link:hover {
     filter: brightness(1.15);
+  }
+}
+
+/* Print CSS setup for clean PDF conversion via window.print() */
+@media print {
+  .download-banner, .no-print { display: none !important; }
+  body { background: #ffffff !important; color: #1f2937 !important; }
+  .container { box-shadow: none !important; border: none !important; margin: 0 !important; padding: 0 !important; max-width: 100% !important; }
+  a { color: inherit !important; text-decoration: none !important; }
+  .badge { border: 1px solid #cbd5e1 !important; background: #f8fafc !important; color: #0f172a !important; }
+}
+
+@media (max-width: 640px) {
+  .download-banner {
+    flex-direction: column; /* Apila el texto y el botón verticalmente */
+    border-radius: 16px;    /* Cambia la forma de pastilla a una tarjeta suave */
+    padding: 14px 16px;
+    width: calc(100vw - 40px);
+    max-width: 320px;
+    bottom: 20px;
+    gap: 12px;
+  }
+  .download-banner .download-text {
+    white-space: normal; /* Permite que el texto se adapte al espacio */
+    text-align: center;
+    width: 100%;
+  }
+  .download-banner .download-action, 
+  .download-banner .download-link {
+    width: 100%;         /* Hace que el botón ocupe todo el ancho disponible */
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
   }
 }
 </style>
@@ -190,48 +166,56 @@ strong { color: var(--text); }
 <body>
 <div class="container">
 <div class="header">
-<img alt="Profile Photo" src="assets/img/foto_cv.png" style="width:120px;height:120px;border-radius:50%;object-fit:cover;"/>
-<div>
-<h1>César Mejía Cruz</h1>
-<div class="meta">Network &amp; Cybersecurity Engineer</div>
+  <img alt="Profile Photo" src="assets/img/foto_cv.png"/>
+  <div>
+    <h1>César Mejía Cruz</h1>
+    <div class="meta">Network &amp; Cybersecurity Engineer</div>
+    <!-- Botón actualizado con la clase 'no-print' y la función onclick -->
+    <div style="margin-top: 8px;" class="no-print">
+      <button type="button" onclick="window.print()" style="background: transparent; color: var(--accent); font-size: 0.85rem; padding: 5px 12px; border: 1px solid var(--accent); border-radius: 6px; font-weight: 600; cursor: pointer; font-family: inherit;">
+        📄 Print / Save as PDF
+      </button>
+    </div>
+  </div>
 </div>
-</div>
-<p>Network and Security Engineer with 3+ years of experience managing enterprise networking, perimeter security, and high-tier technical support within leading telecommunications environments. Specialized in FortiGate firewalls (NSE 4 Certified), advanced routing (BGP), L2VPN architectures (VPLS), and cross-functional incident response using Zendesk. Proven success supporting AAA corporate clients and optimizing operational workflows, directly contributing to a 30% reduction in MTTR. Adept at leading infrastructure migrations and executing perimeter security enhancements with a strong commitment to operational excellence.</p>
+<p>Network and Security Engineer with 4+ years of experience managing enterprise networking, perimeter security, and high-tier technical support within leading telecommunications environments. Specialized in FortiGate firewalls (NSE 4 Certified), advanced routing (BGP), L2VPN architectures (VPLS), multi-cloud IPsec connectivity (AWS, GCP, Azure), and cross-functional incident response using Zendesk. Proven success supporting AAA corporate clients and optimizing operational workflows, directly contributing to a 30% reduction in MTTR. Adept at leading infrastructure migrations and executing perimeter security enhancements with a strong commitment to operational excellence.</p>
+
 <div class="section"><strong>Contact:</strong><br/>
-📞 +52 5611118045 <br/>
-✉️ cesar94xp@outlook.com <br/>
-🌐 <a href="https://www.linkedin.com/in/cesar-mc99/" target="_blank">linkedin.com/in/cesar-mc99 </a> <br/>
+📞 <a href="tel:+525611118045">+52 56 1111 8045</a> <br/>
+✉️ <a href="mailto:cesar94xp@outlook.com">cesar94xp@outlook.com</a> <br/>
+🌐 <a href="https://www.linkedin.com/in/cesar-mc99/" target="_blank">linkedin.com/in/cesar-mc99</a> <br/>
 📍 Mexico City Metropolitan Area</div>
+
 <h2>Professional Experience</h2>
 <ul>
   <li><strong>MCM Tech-Co</strong> (Jul 2022 – Present)<br/>
   <em>(Rapid promotion track across engineering tiers within Core Network &amp; NOC infrastructure)</em>
-    <ul><br/>
+    <ul>
       <li><strong>NOC Engineer - N1 Elite (Core &amp; Backbone Operations)</strong> (Jun 2024 – Present)
         <ul>
           <li>Lead technical operations and support for AAA corporate clients, ensuring 24/7 SLA compliance and swift incident resolution.</li>
           <li>Configure, troubleshoot, and maintain backbone/core network infrastructure.</li>
           <li>Specialize in FortiGate firewalls, including advanced security policy configuration and SSL/IPsec VPN deployment.</li>
           <li>Implement and manage FortiGate SD-WAN solutions, high availability (HA) setup, traffic inspection, and integration with BGP and VPLS networks.</li>
-          <li>Configure and manage FortiGate integrations with AWS and GCP to ensure secure and optimized connectivity between on-premises networks and the cloud.</li>
+          <li>Design, configure, and maintain Site-to-Site IPsec VPN tunnels integrating FortiGate firewalls with multi-cloud environments (AWS, GCP, and Azure) to ensure secure hybrid connectivity and optimal traffic routing.</li>
           <li>Validate and coordinate incident response at the national network level to ensure business continuity.</li>
           <li>Manage hardware refresh projects, including large-scale device replacements and migrations.</li>
         </ul>
-      </li><br/>
+      </li>
       <li><strong>SR Engineer Network Operation Center L2</strong> (Jul 2023 – Jun 2024)
         <ul>
           <li>Coordinated support for critical network events, acting as escalation point for advanced technical incidents.</li>
           <li>Optimized team workflows, resulting in faster resolution times and improved service quality.</li>
           <li>Performed complex configuration changes for advanced network services and client requirements.</li>
         </ul>
-      </li><br/>
+      </li>
       <li><strong>JR / Engineer Network Operation Center L2</strong> (Sep 2022 – Jul 2023)
         <ul>
           <li>Managed escalated tickets for enterprise data connectivity through Zendesk, diagnosing both physical and logical faults.</li>
           <li>Provided tier 2 technical support for corporate clients via ticketing platforms, primarily monitoring and diagnosing complex networking and security incidents.</li>
           <li>Administered VPN access and implemented network security policies while improving customer satisfaction.</li>
         </ul>
-      </li><br/>
+      </li>
       <li><strong>Intern – Net Prov Voice</strong> (Jul 2022 – Sep 2022)
         <ul>
           <li>Provisioned voice and SMS services for enterprise clients.</li>
@@ -261,22 +245,37 @@ strong { color: var(--text); }
 </ul>
 
 <h2>Technical Skills</h2>
-<ul>
-  <li><strong>Network Security:</strong> FortiGate (hardening, log analysis, incident validation, VPN configuration, SD-WAN), Secure Network Design, BGP, VPLS, cloud integrations with AWS and GCP.</li>
-  <li><strong>Networking &amp; Routing:</strong> BGP, VPLS, Routing &amp; Switching (Huawei, Extreme Networks).</li>
-  <li><strong>Incident Management:</strong> Advanced use of Zendesk, AAA client support, Backbone/core validation, 24/7 operational support.</li>
-  <li><strong>Operating Systems:</strong> Advanced use of Linux (Debian-based distributions) for system administration, networking, and troubleshooting.</li>
-  <li><strong>Scripting &amp; Tools:</strong> Git, JavaScript.</li>
-</ul>
+<div class="skills-grid">
+  <span class="badge">Fortinet FortiGate (NSE 4)</span>
+  <span class="badge">Site-to-Site IPsec VPN</span>
+  <span class="badge">Multi-Cloud Hybrid Networking</span>
+  <span class="badge">AWS Cloud Integration</span>
+  <span class="badge">Google Cloud Platform (GCP)</span>
+  <span class="badge">Microsoft Azure</span>
+  <span class="badge">Perimeter Security &amp; Hardening</span>
+  <span class="badge">BGP Routing</span>
+  <span class="badge">VPLS / L2VPN</span>
+  <span class="badge">SD-WAN</span>
+  <span class="badge">Routing &amp; Switching (Cisco, Huawei, Extreme)</span>
+  <span class="badge">Incident Management (Zendesk)</span>
+  <span class="badge">Linux (Debian-based)</span>
+  <span class="badge">Git &amp; GitHub</span>
+  <span class="badge">JavaScript</span>
+</div>
 
-<div id="downloadSpacer" style="height:0;transition:height .25s ease;"></div><div aria-hidden="true" id="end-sentinel"></div></div>
+<!-- El sensor va primero -->
+<div aria-hidden="true" id="end-sentinel" style="position: relative; bottom: 20px;"></div>
+<!-- El espacio que crece va después -->
+<div id="downloadSpacer" style="height:0;transition:height .25s ease;"></div>
+</div>
+
 <div aria-hidden="true" aria-label="Download resume as PDF" class="download-banner" id="downloadBanner" role="dialog">
 <span class="download-text">Want to save this resume?</span>
 <button class="download-action" id="btnPrint" type="button">Print / Save as PDF</button>
 <a class="download-link" download="" href="cv.pdf" id="btnPDF">Download PDF</a>
 </div>
+
 <script>
-// === Show "Download CV" banner when user reaches the bottom ===
 (function() {
   const banner = document.getElementById('downloadBanner');
   const btnPrint = document.getElementById('btnPrint');
@@ -286,11 +285,9 @@ strong { color: var(--text); }
 
   if (!banner || !sentinel) return;
 
-  // Show when the bottom sentinel is visible
   const io = new IntersectionObserver((entries) => {
     for (const e of entries) {
       if (e.isIntersecting) {
-        // Expand spacer so content never gets covered by the banner
         if (spacer) {
           const extra = 16;
           spacer.style.height = (banner.offsetHeight + extra) + 'px';
@@ -306,12 +303,10 @@ strong { color: var(--text); }
   }, { threshold: 0.1 });
   io.observe(sentinel);
 
-  // Print / Save as PDF (browser's native dialog)
   if (btnPrint) {
     btnPrint.addEventListener('click', () => window.print());
   }
 
-  // If there's no cv.pdf alongside this file, hide the direct download link gracefully
   if (btnPDF) {
     fetch('cv.pdf', { method: 'HEAD' }).then((res) => {
       if (!res.ok) btnPDF.style.display = 'none';
@@ -320,5 +315,6 @@ strong { color: var(--text); }
     });
   }
 })();
-</script></body>
+</script>
+</body>
 </html>
